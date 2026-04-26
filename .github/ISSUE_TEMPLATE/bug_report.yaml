@@ -1,0 +1,62 @@
+name: 🤖 AI Auto-Fix Request
+description: Report a bug for Claude Code to fix automatically.
+title: "[BUG]: "
+labels: ["fix-with-claude", "bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🃏 Euchre Engine Bug Report
+        Provide details below. Once submitted, the `fix-with-claude` label will trigger the automation to attempt a fix in a new branch.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Problem Summary
+      description: What is the game doing incorrectly?
+      placeholder: "e.g., The Left Bower isn't being recognized as trump."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Help Claude understand the game state where the error occurs.
+      placeholder: |
+        1. Set Trump to Hearts.
+        2. Dealer is 'bottom' (Player).
+        3. 'left' player leads Jack of Diamonds...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected Area
+      options:
+        - Bidding Logic
+        - Trick-Taking / Card Rankings
+        - Scoring / Point Calculation
+        - UI / Animations
+        - Responsive Layout / CSS
+        - Sound Effects (SFX)
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Technical Context
+      description: Paste any error messages from the browser console or the in-game log here.
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Readiness
+      options:
+        - label: I have checked CLAUDE.md for project standards.
+          required: true
+        - label: I want Claude to create a feature branch for this fix.
+          required: true
