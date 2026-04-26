@@ -1,23 +1,25 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- IDE / Editor ---
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
+.idea/
+*.sublime-project
+
+# --- Claude Code / AI ---
+# If Claude Code creates local temporary logs or auth tokens
+.claude/
+claude.log
+
+# --- Local Secrets ---
+# Keep your API keys out of the repo!
+.env
+.env.local
+
+# --- Future-Proofing ---
+# In case you eventually add node-based tools for linting or minification
+node_modules/
+dist/
+build/
