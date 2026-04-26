@@ -1,4 +1,4 @@
-# CLAUDE.md — Euchre SPA Project
+# CLAUDE.md — Euchre
 
 ## Project Overview
 This project is a high-performance, responsive Single Page Application (SPA) for the game of Euchre. It is intentionally contained within a single `euchre.html` file to simplify portability and deployment.
