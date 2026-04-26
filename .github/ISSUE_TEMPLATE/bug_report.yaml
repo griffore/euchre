@@ -1,7 +1,7 @@
-name: 🤖 AI Auto-Fix Request
-description: Report a bug for Claude Code to fix automatically.
+name: 🤖 Bug Report
+description: Report a bug that can be fixed automatically.
 title: "[BUG]: "
-labels: ["fix-with-claude", "bug"]
+labels: ["auto-fix", "bug"]
 body:
   - type: markdown
     attributes:
